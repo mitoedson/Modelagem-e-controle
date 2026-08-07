@@ -19,7 +19,7 @@
 Considere o sistema dinâmico descrito pela equação
 
 ```math
-\dot{x}(t) = f(t,x) \tag{1}
+\dot{x}(t) = f(t,x) \qquad (1)
 ```
 
 com condição inicial $x(0) = x_0$ conhecida.
@@ -101,7 +101,7 @@ Os sistemas dinâmicos são descritos por equações diferenciais, e a estabilid
 Considere a equação diferencial linear de primeira ordem e homogênea:
 
 ```math
-\frac{dx(t)}{dt} = \alpha x(t) \tag{2}
+\frac{dx(t)}{dt} = \alpha x(t)  \qquad (2)
 ```
 
 com condição inicial $x(0) = x_0$ conhecida, sendo $\alpha$ uma constante real.
@@ -125,7 +125,7 @@ e^{\ln(x(t))} = e^{(\ln(x_0)+\alpha t)} = e^{\ln(x_0)}e^{\alpha t}
 ```
 
 ```math
-\boxed{x(t) = x_0 e^{\alpha t}} \tag{3}
+\boxed{x(t) = x_0 e^{\alpha t}}  \qquad (3)
 ```
 
 ### 2.2 Ponto de equilíbrio
@@ -169,7 +169,7 @@ A curva cresce exponencialmente, atingindo valores da ordem de centenas já em $
 Considere a equação diferencial linear de segunda ordem e homogênea:
 
 ```math
-\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = 0 \tag{4}
+\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = 0  \qquad (4)
 ```
 
 para condições iniciais $x(0) = x_0$ e $dx(0)/dt = dx_0/dt$ conhecidas, com $a$ e $b$ constantes reais.
@@ -178,11 +178,11 @@ para condições iniciais $x(0) = x_0$ e $dx(0)/dt = dx_0/dt$ conhecidas, com $a
 
 Propõe-se uma solução do mesmo tipo da equação de 1ª ordem: $x(t) = e^{\alpha t}$. Substituindo na equação (4), com $dx(t)/dt = \alpha e^{\alpha t}$ e $d^2x(t)/dt^2 = \alpha^2 e^{\alpha t}$:
 
-$$\alpha^2 e^{\alpha t} + a\alpha e^{\alpha t} + be^{\alpha t} = 0 \Rightarrow e^{\alpha t}(\alpha^2 + a\alpha + b) = 0 \tag{5}$$
+$$\alpha^2 e^{\alpha t} + a\alpha e^{\alpha t} + be^{\alpha t} = 0 \Rightarrow e^{\alpha t}(\alpha^2 + a\alpha + b) = 0  \qquad (5)$$
 
 Como $e^{\alpha t}$ nunca se anula, uma condição suficiente para que (5) seja satisfeita é:
 
-$$\alpha^2 + a\alpha + b = 0 \tag{6}$$
+$$\alpha^2 + a\alpha + b = 0  \qquad (6)$$
 
 Essa é a **equação característica**, com duas raízes $\alpha_1$ e $\alpha_2$, cuja natureza (reais distintas, reais duplas, ou complexas conjugadas) determina o comportamento da solução.
 
@@ -194,7 +194,7 @@ Se $f_1(t) = e^{\alpha_1 t}$ e $f_2(t) = e^{\alpha_2 t}$ satisfazem a equação 
 
 A solução geral, portanto, é:
 
-$$x(t) = k_1 e^{\alpha_1 t} + k_2 e^{\alpha_2 t} \tag{7}$$
+$$x(t) = k_1 e^{\alpha_1 t} + k_2 e^{\alpha_2 t}  \qquad (7)$$
 
 ---
 
@@ -245,7 +245,7 @@ O primeiro parêntese é nulo porque $\alpha$ é raiz da equação característi
 
 A solução geral passa a ser:
 
-$$x(t) = k_1 e^{\alpha t} + k_2 t e^{\alpha t} \tag{8}$$
+$$x(t) = k_1 e^{\alpha t} + k_2 t e^{\alpha t}  \qquad (8)$$
 
 Aplicando as condições iniciais:
 
@@ -278,7 +278,7 @@ Usando a **fórmula de Euler**, $e^{j\omega t} = \cos\omega t + j\,\text{sen}\,\
 
 $$x(t) = k_1e^{\sigma t}(\cos\omega t+j\,\text{sen}\,\omega t) + k_2e^{\sigma t}(\cos\omega t - j\,\text{sen}\,\omega t)$$
 
-$$= e^{\sigma t}\big[(k_1+k_2)\cos\omega t + j(k_1-k_2)\text{sen}\,\omega t\big] \tag{9}$$
+$$= e^{\sigma t}\big[(k_1+k_2)\cos\omega t + j(k_1-k_2)\text{sen}\,\omega t\big]  \qquad (9)$$
 
 **Condições iniciais:** $x(0) = k_1+k_2 = x_0$. Derivando (9) e avaliando em $t=0$:
 
