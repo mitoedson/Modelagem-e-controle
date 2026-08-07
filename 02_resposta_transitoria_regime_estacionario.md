@@ -49,7 +49,7 @@ $$-\alpha K = E \Rightarrow K = -\frac{E}{\alpha}$$
 
 Solução geral:
 
-$$x(t) = x_h(t) + x_p(t) = x_h(0)e^{\alpha t} + K = x_h(0)e^{\alpha t} - \frac{E}{\alpha} \tag{2}$$
+$$x(t) = x_h(t) + x_p(t) = x_h(0)e^{\alpha t} + K = x_h(0)e^{\alpha t} - \frac{E}{\alpha} \qquad (2)$$
 
 Com $x(0) = x_h(0) - E/\alpha \Rightarrow x_h(0) = x(0) + E/\alpha$.
 
@@ -79,7 +79,7 @@ $$x(\tau) = x_h(0)e^{\alpha\tau} - \frac{E}{\alpha} = \left(x(0)+\frac{E}{\alpha
 
 ### 2.1 Formulação
 
-$$\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = r(t) \tag{3}$$
+$$\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = r(t) \qquad (3)$$
 
 com $r(t)\neq0$, $\forall t\geq0$, e condições iniciais $x(0)=x_0$, $dx(0)/dt = dx_0/dt$.
 
@@ -115,7 +115,7 @@ A entrada $r(t)$ (via $K=E/b$) afeta apenas **para onde** o sistema converge —
 
 Esta é a parametrização **canônica** usada no restante da disciplina:
 
-$$\frac{d^2x(t)}{dt^2} + 2\xi\omega_n\frac{dx(t)}{dt} + \omega_n^2 x(t) = \omega_n^2 r(t) \tag{4}$$
+$$\frac{d^2x(t)}{dt^2} + 2\xi\omega_n\frac{dx(t)}{dt} + \omega_n^2 x(t) = \omega_n^2 r(t) \qquad (4)$$
 
 onde:
 - $\omega_n$ = **frequência natural não amortecida**
@@ -143,19 +143,19 @@ $$\alpha = -\xi\omega_n \pm \omega_n\sqrt{\xi^2-1} \Rightarrow \boxed{\alpha = -
 
 **Subamortecido ($0<\xi<1$):**
 
-$$x(t) = E - Ee^{-\xi\omega_n t}\left(\cos\omega_d t + \frac{\xi}{\sqrt{1-\xi^2}}\text{sen}\,\omega_d t\right) \tag{5}$$
+$$x(t) = E - Ee^{-\xi\omega_n t}\left(\cos\omega_d t + \frac{\xi}{\sqrt{1-\xi^2}}\text{sen}\,\omega_d t\right) \qquad (5)$$
 
-$$x(t) = E - E\frac{e^{-\xi\omega_n t}}{\sqrt{1-\xi^2}}\,\text{sen}\left(\omega_d t + \text{tg}^{-1}\left(\frac{\sqrt{1-\xi^2}}{\xi}\right)\right), \quad t\geq 0 \tag{6}$$
+$$x(t) = E - E\frac{e^{-\xi\omega_n t}}{\sqrt{1-\xi^2}}\,\text{sen}\left(\omega_d t + \text{tg}^{-1}\left(\frac{\sqrt{1-\xi^2}}{\xi}\right)\right), \quad t\geq 0 \qquad (6)$$
 
 na qual $\omega_d = \omega_n\sqrt{1-\xi^2}$ é a **frequência natural amortecida** — a frequência real da oscilação observada (sempre menor que $\omega_n$).
 
 **Criticamente amortecido ($\xi=1$):**
 
-$$x(t) = E - Ee^{-\omega_n t}(1+\omega_n t), \quad t\geq 0 \tag{7}$$
+$$x(t) = E - Ee^{-\omega_n t}(1+\omega_n t), \quad t\geq 0 \qquad (7)$$
 
 **Superamortecido ($\xi>1$):**
 
-$$x(t) = E + E\frac{\omega_n}{2\sqrt{\xi^2-1}}\left(\frac{e^{-\alpha_1 t}}{\alpha_1}-\frac{e^{-\alpha_2 t}}{\alpha_2}\right), \quad t\geq 0 \tag{8}$$
+$$x(t) = E + E\frac{\omega_n}{2\sqrt{\xi^2-1}}\left(\frac{e^{-\alpha_1 t}}{\alpha_1}-\frac{e^{-\alpha_2 t}}{\alpha_2}\right), \quad t\geq 0 \qquad (8)$$
 
 ### 3.4 A família de curvas (Figura 8)
 
@@ -264,15 +264,15 @@ Ou seja, um pulso infinitesimalmente estreito, infinitamente alto, cuja área to
 
 **Subamortecido ($0<\xi<1$):**
 
-$$x(t) = \frac{\omega_n}{\sqrt{1-\xi^2}}e^{-\xi\omega_n t}\,\text{sen}\left(\omega_n\sqrt{1-\xi^2}\,t\right), \quad t\geq 0 \tag{9}$$
+$$x(t) = \frac{\omega_n}{\sqrt{1-\xi^2}}e^{-\xi\omega_n t}\,\text{sen}\left(\omega_n\sqrt{1-\xi^2}\,t\right), \quad t\geq 0 \qquad (9)$$
 
 **Criticamente amortecido ($\xi=1$):**
 
-$$x(t) = \omega_n^2 t\,e^{-\omega_n t}, \quad t\geq 0 \tag{10}$$
+$$x(t) = \omega_n^2 t\,e^{-\omega_n t}, \quad t\geq 0 \qquad (10)$$
 
 **Superamortecido ($\xi>1$):**
 
-$$x(t) = \frac{\omega_n}{2\sqrt{\xi^2-1}}e^{-(\xi-\sqrt{\xi^2-1})\omega_n t} - \frac{\omega_n}{2\sqrt{\xi^2-1}}e^{-(\xi+\sqrt{\xi^2-1})\omega_n t}, \quad t\geq 0 \tag{11}$$
+$$x(t) = \frac{\omega_n}{2\sqrt{\xi^2-1}}e^{-(\xi-\sqrt{\xi^2-1})\omega_n t} - \frac{\omega_n}{2\sqrt{\xi^2-1}}e^{-(\xi+\sqrt{\xi^2-1})\omega_n t}, \quad t\geq 0 \qquad (11)$$
 
 ### 5.3 Tempo de pico e valor de pico (resposta ao impulso, subamortecido)
 
