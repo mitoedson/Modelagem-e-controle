@@ -98,27 +98,41 @@ Os sistemas dinâmicos são descritos por equações diferenciais, e a estabilid
 
 Considere a equação diferencial linear de primeira ordem e homogênea:
 
-$$\frac{dx(t)}{dt} = \alpha x(t) \tag{2}$$
+```math
+\frac{dx(t)}{dt} = \alpha x(t) \tag{2}
+```
 
 com condição inicial $x(0) = x_0$ conhecida, sendo $\alpha$ uma constante real.
 
 **Resolução por separação de variáveis:**
 
-$$\frac{dx(t)}{dt} = \alpha x(t) \Rightarrow \frac{1}{x(t)}dx(t) = \alpha \, dt$$
+```math
+\frac{dx(t)}{dt} = \alpha x(t) \Rightarrow \frac{1}{x(t)}dx(t) = \alpha \, dt
+```
 
-$$\int_{x_0}^{x(t)} \frac{1}{x(t)}dx(t) = \alpha \int_0^t dt \Rightarrow \ln(x(t))\Big|_{x_0}^{x(t)} = \alpha t \Big|_0^t$$
+```math
+\int_{x_0}^{x(t)} \frac{1}{x(t)}dx(t) = \alpha \int_0^t dt \Rightarrow \ln(x(t))\Big|_{x_0}^{x(t)} = \alpha t \Big|_0^t
+```
 
-$$\ln(x(t)) - \ln(x_0) = \alpha t \Rightarrow \ln(x(t)) = \ln(x_0) + \alpha t$$
+```math
+\ln(x(t)) - \ln(x_0) = \alpha t \Rightarrow \ln(x(t)) = \ln(x_0) + \alpha t
+```
 
-$$e^{\ln(x(t))} = e^{(\ln(x_0)+\alpha t)} = e^{\ln(x_0)}e^{\alpha t}$$
+```math
+e^{\ln(x(t))} = e^{(\ln(x_0)+\alpha t)} = e^{\ln(x_0)}e^{\alpha t}
+```
 
-$$\boxed{x(t) = x_0 e^{\alpha t}} \tag{3}$$
+```math
+\boxed{x(t) = x_0 e^{\alpha t}} \tag{3}
+```
 
 ### 2.2 Ponto de equilíbrio
 
 O ponto de equilíbrio $x_e$ é alcançado quando $dx(t)/dt = 0$, ou seja:
 
-$$\alpha x_e = 0 \Rightarrow x_e = 0 \quad (\text{para } \alpha \neq 0)$$
+```math
+\alpha x_e = 0 \Rightarrow x_e = 0 \quad (\text{para } \alpha \neq 0)
+```
 
 ### 2.3 Estabilidade em função do sinal de $\alpha$
 
@@ -152,7 +166,9 @@ A curva cresce exponencialmente, atingindo valores da ordem de centenas já em $
 
 Considere a equação diferencial linear de segunda ordem e homogênea:
 
-$$\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = 0 \tag{4}$$
+```math
+\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = 0 \tag{4}
+```
 
 para condições iniciais $x(0) = x_0$ e $dx(0)/dt = dx_0/dt$ conhecidas, com $a$ e $b$ constantes reais.
 
