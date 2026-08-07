@@ -257,7 +257,7 @@ $$M_p = e^{-\frac{0{,}6\pi}{\sqrt{1-0{,}6^2}}} = 0{,}0948 = 9{,}48\%$$
 ### 5.1 Definição da entrada impulso
 
 ```math
-r(t) = \begin{cases} \lim\limits_{t_0\to0}\dfrac{E}{t_0} & 0<t<t_0 \\ 0 & t<0 \text{ ou } t_0<t \end{cases}
+r(t) = \begin{cases} \lim\limits_{t_0\to0}\frac{E}{t_0} & 0<t<t_0 \\ 0 & t<0 \text{ ou } t_0<t \end{cases}
 ```
 
 Ou seja, um pulso infinitesimalmente estreito, infinitamente alto, cuja área total é $E$.
