@@ -18,7 +18,9 @@
 
 Considere o sistema dinâmico descrito pela equação
 
-$$\dot{x}(t) = f(t,x) \tag{1}$$
+```math
+\dot{x}(t) = f(t,x) \tag{1}
+```
 
 com condição inicial $x(0) = x_0$ conhecida.
 

@@ -21,7 +21,9 @@
 
 Considere a equação diferencial linear de primeira ordem e **não homogênea**:
 
-$$\frac{dx(t)}{dt} = \alpha x(t) + r(t) \Rightarrow \frac{dx(t)}{dt} - \alpha x(t) = r(t) \tag{1}$$
+```math
+\frac{dx(t)}{dt} = \alpha x(t) + r(t) \Rightarrow \frac{dx(t)}{dt} - \alpha x(t) = r(t) \tag{1}
+```
 
 na qual $r(t) \neq 0$, $\forall t \geq 0$, com condição inicial $x(0)=x_0$.
 
