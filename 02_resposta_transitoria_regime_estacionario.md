@@ -22,11 +22,7 @@
 Considere a equação diferencial linear de primeira ordem e **não homogênea**:
 
 ```math
-\frac{dx(t)}{dt} = \alpha x(t) + r(t) \Rightarrow
-```
-
-```math
-\Rightarrow \frac{dx(t)}{dt} - \alpha x(t) = r(t)
+\frac{dx(t)}{dt} = \alpha x(t) + r(t) \Rightarrow \frac{dx(t)}{dt} - \alpha x(t) = r(t) \qquad(1)
 ```
 
 na qual $r(t) \neq 0$, $\forall t \geq 0$, com condição inicial $x(0)=x_0$.
