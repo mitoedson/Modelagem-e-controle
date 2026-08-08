@@ -1,3 +1,6 @@
+# Estabilidade de Lyapunov - Exercícios
+
+
 ## Exemplo 1 — Sistema linear estável: $\dot{x} = -2x$
 
 **Passo 1: encontrar $x_e$**
