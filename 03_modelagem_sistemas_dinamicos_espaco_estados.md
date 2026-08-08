@@ -84,9 +84,9 @@ $$\dot{x}(t) = \begin{bmatrix}\dot{x}_1(t)\\\dot{x}_2(t)\\\vdots\\\dot{x}_n(t)\e
 
 chega-se a:
 
-$$\dot{x}(t) = f(x,u,t) \tag{1}\quad \text{(equação de estado)}$$
+$$\dot{x}(t) = f(x,u,t) \qquad (1) \quad \text{(equação de estado)}$$
 
-$$y(t) = g(x,u,t) \tag{2}\quad \text{(equação de saída)}$$
+$$y(t) = g(x,u,t) \qquad (2) \quad \text{(equação de saída)}$$
 
 Se as funções vetoriais $f$ ou $g$ envolvem explicitamente o tempo $t$, o sistema é **variante no tempo**.
 
@@ -148,7 +148,7 @@ nas quais $A$ é a matriz de estado, $B$ a matriz de entrada, $C$ a matriz de sa
 
 Conectando diretamente com a Aula 2, a equação diferencial linear de 2ª ordem na forma padrão:
 
-$$\ddot{x}(t) + 2\xi\omega_n\dot{x}(t) + \omega_n^2x(t) = \omega_n^2u(t) \tag{3}$$
+$$\ddot{x}(t) + 2\xi\omega_n\dot{x}(t) + \omega_n^2x(t) = \omega_n^2u(t) \qquad (3)$$
 
 na qual $\omega_n$ é a frequência natural não amortecida e $\xi$ é o fator de amortecimento, pode ser representada em variáveis de estado.
 
