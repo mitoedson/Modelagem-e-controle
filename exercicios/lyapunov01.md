@@ -1,7 +1,7 @@
 # Estabilidade de Lyapunov - Exercícios
 
 
-## Exemplo 1 — Sistema linear estável: $\dot{x} = -2x$
+## (1) Sistema linear estável: $\dot{x} = -2x$
 
 **Passo 1: encontrar $x_e$**
 
@@ -29,7 +29,7 @@ Em $t=0$: $x=0{,}4 \leq 0{,}5$ ✓. Como a função só decresce em módulo, $|x
 
 ---
 
-## Exemplo 2 — Sistema linear instável: $\dot{x} = 2x$
+## (2) — Sistema linear instável: $\dot{x} = 2x$
 
 **Solução:** $x(t) = x_0e^{2t}$, $x_e=0$.
 
@@ -41,7 +41,7 @@ Ou seja, **não importa quão pequeno seja $x_0$** (e portanto $\delta$), a traj
 
 ---
 
-## Exemplo 3 — Sistema marginalmente estável: $\dot{x} = 0 \cdot x$ (equilíbrio "neutro")
+## (3) — Sistema marginalmente estável: $\dot{x} = 0 \cdot x$ (equilíbrio "neutro")
 
 Aqui $\dot{x}=0$ para todo $x$, então **qualquer ponto é de equilíbrio**. Se $x_0$ é a condição inicial, a solução é trivialmente:
 
@@ -51,7 +51,7 @@ Se você fixar $x_e = 0$ (um dos infinitos pontos de equilíbrio) e escolher $\x
 
 ---
 
-## Exemplo 4 — Um caso não linear, para mostrar que $\delta$ pode ser *menor* que $\xi$
+## (4) — Um caso não linear, para mostrar que $\delta$ pode ser *menor* que $\xi$
 
 Considere $\dot{x} = -x + x^3$ (não linear), com $x_e=0$.
 
