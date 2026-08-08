@@ -17,7 +17,7 @@
 
 Considere a equação diferencial linear de segunda ordem não homogênea na forma padrão:
 
-$$\ddot{x}(t) + 2\xi\omega_n\dot{x}(t) + \omega_n^2x(t) = \omega_n^2u(t) \tag{1}$$
+$$\ddot{x}(t) + 2\xi\omega_n\dot{x}(t) + \omega_n^2x(t) = \omega_n^2u(t) \qquad (1)$$
 
 na qual $\omega_n$ é a frequência natural não amortecida e $\xi$ é o fator de amortecimento.
 
@@ -31,7 +31,7 @@ $$e(t) = r(t) - x(t)$$
 
 Logo:
 
-$$u(t) = k_pe(t) = k_pr(t) - k_px(t) \tag{2}$$
+$$u(t) = k_pe(t) = k_pr(t) - k_px(t) \qquad (2)$$
 
 ### 1.2 Efeito sobre a equação diferencial
 
@@ -53,7 +53,7 @@ $$r(t) = \begin{cases}E & t\geq0\\0 & t<0\end{cases}$$
 
 resultando na solução particular $x_p(\infty)=K$. Assim:
 
-$$\ddot{x}(t) + 2\xi\omega_n\dot{x}(t) + (\omega_n^2+\omega_n^2k_p)x(t) = \omega_n^2k_pE \tag{3}$$
+$$\ddot{x}(t) + 2\xi\omega_n\dot{x}(t) + (\omega_n^2+\omega_n^2k_p)x(t) = \omega_n^2k_pE \qquad (3)$$
 
 Em regime permanente, $\ddot{x}(\infty)=\dot{x}(\infty)=0$:
 
@@ -91,7 +91,7 @@ na qual $k_p$ é o ganho proporcional e $k_d$ é o **ganho derivativo**.
 
 Com $e(t)=r(t)-x(t)$:
 
-$$u(t) = k_pe(t)+k_d\dot{e}(t) = k_pr(t)-k_px(t)+k_d\dot{r}(t)-k_d\dot{x}(t) \tag{4}$$
+$$u(t) = k_pe(t)+k_d\dot{e}(t) = k_pr(t)-k_px(t)+k_d\dot{r}(t)-k_d\dot{x}(t) \qquad (4)$$
 
 ### 2.2 Efeito sobre a equação diferencial
 
@@ -109,7 +109,7 @@ $$\Rightarrow \boxed{\ddot{x}(t) + (2\xi\omega_n+\omega_n^2k_d)\dot{x}(t) + (\om
 
 Considere $r(t)=E$ (degrau), resultando em $x_p(\infty)=K$ e $\dot{r}(t)=0$:
 
-$$\ddot{x}(t)+(2\xi\omega_n+\omega_n^2k_d)\dot{x}(t)+(\omega_n^2+\omega_n^2k_p)x(t) = \omega_n^2k_pE \tag{5}$$
+$$\ddot{x}(t)+(2\xi\omega_n+\omega_n^2k_d)\dot{x}(t)+(\omega_n^2+\omega_n^2k_p)x(t) = \omega_n^2k_pE \qquad (5)$$
 
 Em regime permanente, $\ddot{x}_p(\infty)=\dot{x}_p(\infty)=0$:
 
@@ -177,7 +177,7 @@ Da 2ª lei de Newton (igual à Aula 3):
 
 $$\sum_{i=1}^3\vec{F}_i = m\vec{a} \Rightarrow -kw(t)-b\dot{w}(t)+ku(t) = m\ddot{w}(t)$$
 
-$$\ddot{w}(t) = -\frac{k}{m}w(t)-\frac{b}{m}\dot{w}(t)+\frac{k}{m}u(t) \tag{6}$$
+$$\ddot{w}(t) = -\frac{k}{m}w(t)-\frac{b}{m}\dot{w}(t)+\frac{k}{m}u(t) \qquad (6)$$
 
 O erro é $e(t)=r(t)-w(t)$ e o sinal de controle PD:
 
@@ -185,13 +185,13 @@ $$u(t) = k_pe(t)+k_d\dot{e}(t) = k_pr(t)-k_pw(t)+k_d\dot{r}(t)-k_d\dot{w}(t)$$
 
 Como $r(t)$ é degrau, $\dot{r}(t)=0$:
 
-$$u(t) = k_pr(t) - k_pw(t) - k_d\dot{w}(t) \tag{7}$$
+$$u(t) = k_pr(t) - k_pw(t) - k_d\dot{w}(t) \qquad (7)$$
 
 Substituindo (7) em (6):
 
 $$\ddot{w}(t) = -\frac{k}{m}w(t)-\frac{b}{m}\dot{w}(t)+\frac{k}{m}(k_pr(t)-k_pw(t)-k_d\dot{w}(t))$$
 
-$$\Rightarrow \ddot{w}(t) = -\left(\frac{k+kk_p}{m}\right)w(t) - \left(\frac{b+kk_d}{m}\right)\dot{w}(t) + \frac{kk_p}{m}r(t) \tag{9}$$
+$$\Rightarrow \ddot{w}(t) = -\left(\frac{k+kk_p}{m}\right)w(t) - \left(\frac{b+kk_d}{m}\right)\dot{w}(t) + \frac{kk_p}{m}r(t) \qquad (9)$$
 
 ou, equivalentemente:
 
@@ -207,7 +207,7 @@ Como $\dot{w}(\infty)=0$, $\ddot{w}(\infty)=0$, $r(\infty)=E$ e $w(\infty)=K$, p
 
 $$0 = -\left(\frac{k+kk_p}{m}\right)K + \frac{kk_p}{m}E \Rightarrow -(k+kk_p)K+kk_pE = 0 \Rightarrow K = \frac{kk_pE}{k+kk_p}$$
 
-$$\Rightarrow \boxed{K = \frac{k_pE}{1+k_p}} \tag{10}$$
+$$\Rightarrow \boxed{K = \frac{k_pE}{1+k_p}} \qquad (10)$$
 
 > Confirma exatamente a previsão teórica: o erro de regime permanente depende só de $k_p$, igual ao caso do controle P puro.
 
@@ -221,9 +221,9 @@ $$\ddot{w}(t) = -\omega_n^2w(t)-2\xi\omega_n\dot{w}(t)+\omega_n^2u(t) = -\left(\
 
 de maneira que:
 
-$$\omega_n^2 = \frac{k+kk_p}{m} \Rightarrow \boxed{k_p = \frac{m\omega_n^2-k}{k}} \tag{11}$$
+$$\omega_n^2 = \frac{k+kk_p}{m} \Rightarrow \boxed{k_p = \frac{m\omega_n^2-k}{k}} \qquad (11)$$
 
-$$2\xi\omega_n = \frac{b+kk_d}{m} \Rightarrow \boxed{k_d = \frac{2m\xi\omega_n-b}{k}} \tag{12}$$
+$$2\xi\omega_n = \frac{b+kk_d}{m} \Rightarrow \boxed{k_d = \frac{2m\xi\omega_n-b}{k}} \qquad (12)$$
 
 Essas duas fórmulas são o núcleo do método: dado um par $(\xi,\omega_n)$ — obtido a partir de $(M_p,t_s)$ desejados — calculam-se diretamente os ganhos do controlador.
 
