@@ -1,6 +1,4 @@
-# Modelagem e Controle (ESTA020-17) — Aula 1
-
-## Estabilidade segundo Lyapunov e Equações Diferenciais Lineares Homogêneas
+# Estabilidade segundo Lyapunov e Equações Diferenciais Lineares Homogêneas
 
 
 ## Índice
@@ -10,7 +8,6 @@
 3. [Equações diferenciais lineares de 2ª ordem homogêneas](#3-equações-diferenciais-lineares-de-2ª-ordem-homogêneas)
 4. [Síntese geral](#4-síntese-geral)
 
----
 
 ## 1. Análise de estabilidade segundo Lyapunov
 
@@ -172,11 +169,11 @@ Considere a equação diferencial linear de segunda ordem e homogênea:
 \frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = 0  \qquad (4)
 ```
 
-para condições iniciais $x(0) = x_0$ e $dx(0)/dt = dx_0/dt$ conhecidas, com $a$ e $b$ constantes reais.
+para condições iniciais $x(0) = x_0$ e $\frac{dx(0)}{dt} = \frac{dx_0}{dt}$ conhecidas, com $a$ e $b$ constantes reais.
 
 ### 3.2 Equação característica
 
-Propõe-se uma solução do mesmo tipo da equação de 1ª ordem: $x(t) = e^{\alpha t}$. Substituindo na equação (4), com $dx(t)/dt = \alpha e^{\alpha t}$ e $d^2x(t)/dt^2 = \alpha^2 e^{\alpha t}$:
+Propõe-se uma solução do mesmo tipo da equação de 1ª ordem: $x(t) = e^{\alpha t}$. Substituindo na equação (4), com $\frac{dx(t)}{dt} = \alpha e^{\alpha t}$ e $\frac{d^2x(t)}{dt^2} = \alpha^2 e^{\alpha t}$:
 
 $$\alpha^2 e^{\alpha t} + a\alpha e^{\alpha t} + be^{\alpha t} = 0 \Rightarrow e^{\alpha t}(\alpha^2 + a\alpha + b) = 0  \qquad (5)$$
 
@@ -210,7 +207,7 @@ $$x(0) = k_1 + k_2 = x_0, \qquad \frac{dx(0)}{dt} = k_1\alpha_1 + k_2\alpha_2 = 
 
 Resolvendo o sistema (por substituição de $k_2 = x_0 - k_1$, e simetricamente $k_1 = x_0 - k_2$):
 
-$$k_1 = \frac{-dx_0/dt + x_0\alpha_2}{\alpha_2 - \alpha_1}, \qquad k_2 = \frac{dx_0/dt - x_0\alpha_1}{\alpha_2 - \alpha_1}$$
+$$k_1 = \frac{-\frac{dx_0}{dt} + x_0\alpha_2}{\alpha_2 - \alpha_1}, \qquad k_2 = \frac{\frac{dx_0}{dt} - x_0\alpha_1}{\alpha_2 - \alpha_1}$$
 
 Essa solução é **geral e única**, desde que $\alpha_2 - \alpha_1 \neq 0$, isto é, $\alpha_1 \neq \alpha_2$.
 

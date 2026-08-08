@@ -1,6 +1,4 @@
-# Modelagem e Controle (ESTA020-17) — Aula 2
-
-## Análise de Resposta Transitória e de Regime Estacionário
+# Análise de Resposta Transitória e de Regime Estacionário
 
 
 ## Índice
