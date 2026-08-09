@@ -183,6 +183,8 @@ $$\alpha^2 + a\alpha + b = 0  \qquad (6)$$
 
 Essa é a **equação característica**, com duas raízes $\alpha_1$ e $\alpha_2$, cuja natureza (reais distintas, reais duplas, ou complexas conjugadas) determina o comportamento da solução.
 
+Obs: Note que $x_0$ não aparece quando obtemos a equação característica, como observado na 1ª Ordem, já que ela se anula quando analisamos em (5).
+
 ### 3.3 Princípio da superposição
 
 Se $f_1(t) = e^{\alpha_1 t}$ e $f_2(t) = e^{\alpha_2 t}$ satisfazem a equação (4) (exceto pelas condições iniciais), então a combinação linear $f(t) = k_1 f_1(t) + k_2 f_2(t)$ também satisfaz.
