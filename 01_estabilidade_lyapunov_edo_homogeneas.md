@@ -220,6 +220,11 @@ $$k_1 = \frac{-\frac{dx_0}{dt} + x_0\alpha_2}{\alpha_2 - \alpha_1}, \qquad k_2 =
 
 Essa solução é **geral e única**, desde que $\alpha_2 - \alpha_1 \neq 0$, isto é, $\alpha_1 \neq \alpha_2$.
 
+A solução geral, portanto, é:
+
+$$x(t) = k_1 e^{\alpha_1 t} - k_2 e^{\alpha_2 t}$$
+
+
 **Exemplo numérico:** $a = 5$, $b = 6$ → $\alpha_1 = -2$, $\alpha_2 = -3$. Com $x_0 = 5$ e $dx_0/dt = 2$:
 
 $$k_1 = \frac{-2 + 5(-3)}{(-3)-(-2)} = 17, \qquad k_2 = \frac{2 - 5(-2)}{(-3)-(-2)} = -12$$
@@ -237,7 +242,7 @@ $$x(t) = 17e^{-2t} - 12e^{-3t}$$
 
 ### 3.5 Caso 2 — Raízes reais e duplas ($\alpha_1 = \alpha_2 = \alpha$)
 
-Se $\alpha_1 = \alpha_2 = \alpha$, a forma (7) se reduz a $x(t) = (k_1+k_2)e^{\alpha t} = k_3 e^{\alpha t}$ — **apenas uma constante livre**, insuficiente para satisfazer duas condições iniciais em geral.
+Se $\alpha_1 = \alpha_2 = \alpha$, a forma (7) se reduz a $x(t) = k_1e^{\alpha t} + k_2e^{\alpha t} = (k_1+k_2)e^{\alpha t} = k_3 e^{\alpha t}$ — **apenas uma constante livre**, insuficiente para satisfazer duas condições iniciais em geral.
 
 **A segunda solução independente:** propõe-se $x(t) = te^{\alpha t}$, com
 
