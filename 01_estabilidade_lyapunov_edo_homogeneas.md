@@ -211,8 +211,9 @@ $$\frac{dx(0)}{dt} = k_1\alpha_1 e^{\alpha_1 0} + k_2\alpha_2 e^{\alpha_2 0} = k
 
 Temos o sistema:
 
-$$\begin{cases} k_1 + k_2 = x_0 \\ k_1\alpha_1 + k_2\alpha_2 = \frac{dx_0}{dt} \end{cases}$$
-
+```math
+\begin{cases} k_1 + k_2 = x_0 \\ k_1\alpha_1 + k_2\alpha_2 = \frac{dx_0}{dt} \end{cases}
+```
 
 Resolvendo o sistema (por substituição de $k_2 = x_0 - k_1$, e simetricamente $k_1 = x_0 - k_2$):
 
