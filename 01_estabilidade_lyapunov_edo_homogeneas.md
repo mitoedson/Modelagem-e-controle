@@ -201,11 +201,18 @@ $$x(t) = k_1 e^{\alpha_1 t} + k_2 e^{\alpha_2 t}  \qquad (7)$$
 
 Derivando (7):
 
-$$\frac{dx(t)}{dt} = k_1\alpha_1 e^{\alpha_1 t} + k_2\alpha_2 e^{\alpha_2 t}$$
+$$\frac{dx(t)}{dt} = \frac{d (k_1 e^{\alpha_1 t} + k_2 e^{\alpha_2 t})}{dt} = k_1\alpha_1 e^{\alpha_1 t} + k_2\alpha_2 e^{\alpha_2 t}$$
 
-Aplicando as condições iniciais:
+Aplicando as condições iniciais de (4), em (7):
 
-$$x(0) = k_1 + k_2 = x_0, \qquad \frac{dx(0)}{dt} = k_1\alpha_1 + k_2\alpha_2 = \frac{dx_0}{dt}$$
+$$x(0) = k_1 e^{\alpha_1 0} + k_2 e^{\alpha_2 0}= k_1 + k_2 = x_0$$
+
+$$\frac{dx(0)}{dt} = k_1\alpha_1 e^{\alpha_1 0} + k_2\alpha_2 e^{\alpha_2 0} = k_1\alpha_1 + k_2\alpha_2 = \frac{dx_0}{dt}$$
+
+Temos o sistema:
+
+$$\begin{cases} k_1 + k_2 = x_0 \\ k_1\alpha_1 + k_2\alpha_2 = \frac{dx_0}{dt} \end{cases}$$
+
 
 Resolvendo o sistema (por substituição de $k_2 = x_0 - k_1$, e simetricamente $k_1 = x_0 - k_2$):
 
