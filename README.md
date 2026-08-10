@@ -1,4 +1,4 @@
-# Modelagem e Controle — ESTA020-17
+# Modelagem e Controle
 
 Material elaborado a partir dos slides de aula, da disciplina **ESTA020-17: Modelagem e Controle**, da Universidade Federal do ABC (UFABC), ministrada pelo Prof. Dr. Alfredo Del Sole Lordelo, com dedução completa das equações, exemplos numéricos resolvidos passo a passo, e conexões explícitas entre os tópicos.
 
