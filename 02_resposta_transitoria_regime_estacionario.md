@@ -39,7 +39,9 @@ Como $x_h$ satisfaz a equação homogênea, o primeiro par de termos é nulo, re
 
 ### 1.3 Caso particular: entrada degrau
 
-$$r(t) = \begin{cases} E & t \geq 0 \\ 0 & t < 0 \end{cases}$$
+```math
+r(t) = \begin{cases} E & t \geq 0 \\ 0 & t < 0 \end{cases}
+```
 
 Propõe-se $x_p(t) = K$ (constante). Em regime permanente, $dx_p/dt = 0$:
 

@@ -391,6 +391,3 @@ Os exemplos de 1ª e 2ª ordem servem como **casos particulares e concretos** da
 
 - LORDELO, A. D. S. *ESTA020-17: Modelagem e Controle — Aula 1*. Slides de aula, UFABC, 2021.
 
----
-
-*Material elaborado como notas de estudo, a partir dos slides da disciplina ESTA020-17 (Modelagem e Controle) — UFABC.*
