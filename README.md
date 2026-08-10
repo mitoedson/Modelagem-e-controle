@@ -6,7 +6,6 @@ Material elaborado a partir dos slides de aula, da disciplina **ESTA020-17: Mode
 
 **Ementa:** modelagem matemática de sistemas dinâmicos através de equações diferenciais e no espaço de estados. Análise de estabilidade de sistemas dinâmicos. Princípios de controle de malha aberta e de malha fechada; projeto de controladores elementares no domínio do tempo.
 
----
 
 ## Estrutura do curso
 
@@ -28,7 +27,6 @@ A disciplina se desenvolve em seis grandes blocos, que se conectam de forma sequ
 5. **Estuda-se** o comportamento em regime de excitação senoidal (ressonância) e formaliza-se a análise de estabilidade para sistemas não lineares, via os métodos direto e indireto de Lyapunov (Aulas 5–6), aplicando-os a um sistema não linear paradigmático — o predador-presa (Aula 7).
 6. **Introduz-se** uma formulação alternativa e mais poderosa para obter as equações do movimento de sistemas mecânicos — as equações de Euler-Lagrange —, dispensando o cálculo explícito das forças de restrição (Aula 8).
 
----
 
 ## Índice dos materiais
 
@@ -43,7 +41,6 @@ A disciplina se desenvolve em seis grandes blocos, que se conectam de forma sequ
 | [`07_sistema_predador_presa.md`](07_sistema_predador_presa.md) | Aula 7 | Equações de Lotka-Volterra; pontos de equilíbrio e sua estabilidade; trajetórias em ciclo fechado (centro); extensões com crescimento logístico da presa e com agente nocivo (inseticida) — princípio de Volterra |
 | [`08_equacoes_euler_lagrange.md`](08_equacoes_euler_lagrange.md) | Aula 8 | Restrições holonômicas e coordenadas generalizadas; lagrangiano $L=T-V$; equações de Euler-Lagrange; equivalência com a segunda lei de Newton; exemplo completo do pêndulo simples com atrito |
 
----
 
 ## Conceitos-chave que atravessam todo o curso
 
@@ -54,7 +51,6 @@ A disciplina se desenvolve em seis grandes blocos, que se conectam de forma sequ
 - **Energia como ferramenta de análise**: usada para caracterizar amplitude de oscilação na ressonância (Aula 5), como função de Lyapunov para certificar estabilidade sem resolver a EDO (Aula 6), e como base do lagrangiano $L=T-V$ para obter as próprias equações do movimento (Aula 8).
 - **Casos de fronteira (autovalores no eixo imaginário)**: aparecem recorrentemente — no pêndulo sem atrito (Aula 6) e no equilíbrio de coexistência do sistema predador-presa (Aula 7) — como o limite de validade do primeiro método de Lyapunov, motivando ferramentas complementares (segundo método, análise direta de trajetórias).
 
----
 
 ## Referências bibliográficas
 
