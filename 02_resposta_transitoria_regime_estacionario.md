@@ -51,7 +51,7 @@ Solução geral:
 
 $$x(t) = x_h(t) + x_p(t) = x_h(0)e^{\alpha t} + K = x_h(0)e^{\alpha t} - \frac{E}{\alpha} \qquad (2)$$
 
-Com $x(0) = x_h(0) - E/\alpha \Rightarrow x_h(0) = x(0) + E/\alpha$.
+Com $x(0) = x_h(0) - \frac{E}{\alpha} \Rightarrow x_h(0) = x(0) + \frac{E}{\alpha}$.
 
 ### 1.4 Constante de tempo $\tau$
 
@@ -81,17 +81,17 @@ $$x(\tau) = x_h(0)e^{\alpha\tau} - \frac{E}{\alpha} = \left(x(0)+\frac{E}{\alpha
 
 $$\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = r(t) \qquad (3)$$
 
-com $r(t)\neq0$, $\forall t\geq0$, e condições iniciais $x(0)=x_0$, $dx(0)/dt = dx_0/dt$.
+com $r(t)\neq0$, $\forall t\geq0$, e condições iniciais $x(0)=x_0$, $\frac{dx(0)}{dt} = \frac{dx_0}{dt}$.
 
 Pela mesma lógica de superposição, $x(t) = x_h(t)+x_p(t)$ é solução de (3), pois:
 
 $$\frac{d^2x_h(t)}{dt^2}+a\frac{dx_h(t)}{dt}+bx_h(t) + \frac{d^2x_p(t)}{dt^2}+a\frac{dx_p(t)}{dt}+bx_p(t) = 0+r(t)$$
 
-sendo sempre possível encontrar uma solução para (3) para quaisquer condições iniciais $x(0)=x_h(0)+x_p(0)$ e $dx(0)/dt = dx_h(0)/dt + dx_p(0)/dt$.
+sendo sempre possível encontrar uma solução para (3) para quaisquer condições iniciais $x(0)=x_h(0)+x_p(0)$ e $\frac{dx(0)}{dt} = \frac{dx_h(0)}{dt} + \frac{dx_p(0)}{dt}$.
 
 ### 2.2 Entrada degrau, solução particular
 
-Com $r(t)=E$ constante, propõe-se $x_p(t)=K$. Em regime permanente, $d^2x_p/dt^2 = dx_p/dt = 0$:
+Com $r(t)=E$ constante, propõe-se $x_p(t)=K$. Em regime permanente, $\frac{d^2x_p}{dt^2} = \frac{dx_p}{dt} = 0$:
 
 $$bK = E \Rightarrow K = \frac{E}{b}$$
 
@@ -101,13 +101,13 @@ $$bK = E \Rightarrow K = \frac{E}{b}$$
 
 A entrada $r(t)$ (via $K=E/b$) afeta apenas **para onde** o sistema converge — não **se** ele converge. Exemplos:
 
-| Exemplo | Raízes | $K=E/b$ | Estável? |
+| Exemplo | Raízes | $K=\frac{E}{b}$ | Estável? |
 |---|---|---|---|
 | Fig. 2 | $\alpha_1=2,\ \alpha_2=3$ | — | Instável (diverge) |
-| Fig. 3 | $\alpha_1=-2,\ \alpha_2=-3$, $E=1$ | $1/6=0{,}1667$ | Assint. estável |
-| Fig. 5 | $\alpha_1=-2,\ \alpha_2=-3$, $E=12$ | $12/6=2$ | Assint. estável |
+| Fig. 3 | $\alpha_1=-2,\ \alpha_2=-3$, $E=1$ | $\frac{1}{6}=0{,}1667$ | Assint. estável |
+| Fig. 5 | $\alpha_1=-2,\ \alpha_2=-3$, $E=12$ | $\frac{12}{6}=2$ | Assint. estável |
 | Fig. 6 | $2\pm j7$ | — | Instável, oscilação crescente |
-| Fig. 7 | $-2\pm j7$, $E=159$ | $159/53=3$ | Assint. estável, oscilação amortecida |
+| Fig. 7 | $-2\pm j7$, $E=159$ | $\frac{159}{53}=3$ | Assint. estável, oscilação amortecida |
 
 ---
 
