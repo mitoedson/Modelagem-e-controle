@@ -268,6 +268,7 @@ Isso também é solução (é combinação linear das duas soluções, com $k_1=
 $$\lim_{\epsilon\to0} \frac{e^{(\alpha+\epsilon)t}-e^{\alpha t}}{\epsilon} = \frac{\partial}{\partial\alpha}e^{\alpha t} = t\,e^{\alpha t}$$
 
 Relembrando a definição:
+
 $$\boxed{\dot f(x) =\lim_{h\to0} \frac{{f(x+h)}-f(x)}{h}} $$
 
 
