@@ -5,14 +5,6 @@ Notas de estudo da disciplina **ESTA020-17: Modelagem e Controle**, da Universid
 > Material elaborado a partir dos slides de aula, com dedução completa das equações, exemplos numéricos resolvidos passo a passo, e conexões explícitas entre os tópicos.
 
 
-## Sobre a disciplina
-
-| | |
-|---|---|
-| **Código** | ESTA020-17 |
-| **T–P–I** | 2 – 0 – 5 |
-| **Recomendação** | Introdução às Equações Diferenciais Ordinárias |
-
 **Objetivo:** aprofundar os conhecimentos de modelagem matemática de sistemas dinâmicos e introduzir conceitos elementares no projeto de controladores no domínio do tempo.
 
 **Ementa:** modelagem matemática de sistemas dinâmicos através de equações diferenciais e no espaço de estados. Análise de estabilidade de sistemas dinâmicos. Princípios de controle de malha aberta e de malha fechada; projeto de controladores elementares no domínio do tempo.

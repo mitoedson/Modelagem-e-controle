@@ -43,11 +43,19 @@ Como $x_h$ satisfaz a equação homogênea, o primeiro par de termos é nulo, re
 r(t) = \begin{cases} E & t \geq 0 \\ 0 & t < 0 \end{cases}
 ```
 
-Propõe-se $x_p(t) = K$ (constante). Em regime permanente, $dx_p/dt = 0$:
+Propõe-se $x_p(t) = K$ (constante). Em regime permanente, $\frac{dx_p}{dt} = 0$:
 
-$$-\alpha K = E \Rightarrow K = -\frac{E}{\alpha}$$
+$$\frac{dx_p(t)}{dt} - \alpha x_p(t) = r(t) \Rightarrow 0 - \alpha K = E$$
+$$\Rightarrow -\alpha K = E \Rightarrow K = -\frac{E}{\alpha}$$
 
-Solução geral:
+#### Solução geral:
+
+Relembrando, em (3), aula 01:
+
+```math
+x(t) = x_0 e^{\alpha t} \Rightarrow x_h(t)=x_h(0)e^{\alpha t}
+```
+Assim:
 
 $$x(t) = x_h(t) + x_p(t) = x_h(0)e^{\alpha t} + K = x_h(0)e^{\alpha t} - \frac{E}{\alpha} \qquad (2)$$
 
