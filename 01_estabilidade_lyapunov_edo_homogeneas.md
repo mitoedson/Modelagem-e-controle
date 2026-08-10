@@ -265,7 +265,7 @@ $$\frac{e^{(\alpha+\epsilon)t} - e^{\alpha t}}{\epsilon}$$
 
 Isso também é solução (é combinação linear das duas soluções, com $k_1=-1/\epsilon$, $k_2=1/\epsilon$). Agora, o que acontece quando $\epsilon \to 0$ (as duas raízes colapsam numa só)? Essa expressão é **exatamente a definição de derivada parcial** de $e^{\alpha t}$ em relação a $\alpha$:
 
-$$\lim_{\epsilon\to0} \frac{e^{(\alpha+\epsilon)t}-e^{\alpha t}}{\epsilon} = \frac{\partial}{\partial\alpha}e^{\alpha t} = t\,e^{\alpha t}$$
+$$\lim_{\epsilon\to0} \frac{e^{(\alpha+\epsilon)t}-e^{\alpha t}}{\epsilon} = \frac{\partial}{\partial\alpha}e^{\alpha t} = te^{\alpha t}$$
 
 Relembrando a definição:
 
