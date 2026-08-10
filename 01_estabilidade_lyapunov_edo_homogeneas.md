@@ -203,6 +203,10 @@ Derivando (7):
 
 $$\frac{dx(t)}{dt} = \frac{d (k_1 e^{\alpha_1 t} + k_2 e^{\alpha_2 t})}{dt} = k_1\alpha_1 e^{\alpha_1 t} + k_2\alpha_2 e^{\alpha_2 t}$$
 
+### Encontrar $k_1$ e $k_2$:
+
+Necessitamos que duas condições sejam satisfeitas mostradas em (4): $$x(0) =  x_0 \quad e \quad\frac{dx(0)}{dt} = \frac{dx_0}{dt}$$
+
 Aplicando as condições iniciais de (4), em (7):
 
 $$x(0) = k_1 e^{\alpha_1 0} + k_2 e^{\alpha_2 0}= k_1 + k_2 = x_0$$
@@ -217,13 +221,13 @@ Temos o sistema:
 
 Resolvendo o sistema (por substituição de $k_2 = x_0 - k_1$, e simetricamente $k_1 = x_0 - k_2$):
 
-$$k_1 = \frac{-\frac{dx_0}{dt} + x_0\alpha_2}{\alpha_2 - \alpha_1}, \qquad k_2 = \frac{\frac{dx_0}{dt} - x_0\alpha_1}{\alpha_2 - \alpha_1}$$
+$$\boxed{k_1 = \frac{-\frac{dx_0}{dt} + x_0\alpha_2}{\alpha_2 - \alpha_1}, \qquad k_2 = \frac{\frac{dx_0}{dt} - x_0\alpha_1}{\alpha_2 - \alpha_1}}$$
 
 Essa solução é **geral e única**, desde que $\alpha_2 - \alpha_1 \neq 0$, isto é, $\alpha_1 \neq \alpha_2$.
 
 A solução geral, portanto, é:
 
-$$x(t) = k_1 e^{\alpha_1 t} - k_2 e^{\alpha_2 t}$$
+$$\boxed{x(t) = k_1 e^{\alpha_1 t} - k_2 e^{\alpha_2 t}}$$
 
 
 **Exemplo numérico:** $a = 5$, $b = 6$ → $\alpha_1 = -2$, $\alpha_2 = -3$. Com $x_0 = 5$ e $dx_0/dt = 2$:
@@ -245,7 +249,29 @@ $$x(t) = 17e^{-2t} - 12e^{-3t}$$
 
 Se $\alpha_1 = \alpha_2 = \alpha$, a forma (7) se reduz a $x(t) = k_1e^{\alpha t} + k_2e^{\alpha t} = (k_1+k_2)e^{\alpha t} = k_3 e^{\alpha t}$ — **apenas uma constante livre**, insuficiente para satisfazer duas condições iniciais em geral.
 
-**A segunda solução independente:** propõe-se $x(t) = te^{\alpha t}$, com
+
+
+### Encontrando a outra solução
+
+Quando $\alpha_1=\alpha_2=\alpha$ (raiz dupla), a tentativa natural $x(t)=e^{\alpha t}$ só dá **uma** função independente — mas uma equação de 2ª ordem *precisa* de duas soluções independentes para formar a solução geral (afinal, você tem duas condições iniciais para satisfazer: $x_0$ e $dx_0/dt$). Falta uma peça.
+
+Uma forma bem intuitiva de enxergar isso: imagine que, em vez de raízes exatamente iguais, você tem duas raízes **quase iguais**, $\alpha_1 = \alpha$ e $\alpha_2 = \alpha+\epsilon$, com $\epsilon$ bem pequeno (mas diferente de zero). A solução geral, nesse caso quase-degenerado, ainda é:
+
+$$x(t) = k_1e^{\alpha t} + k_2e^{(\alpha+\epsilon)t}$$
+
+Agora, monte uma combinação específica — a **diferença** dividida por $\epsilon$ (um truque clássico, parecido com a definição de derivada):
+
+$$\frac{e^{(\alpha+\epsilon)t} - e^{\alpha t}}{\epsilon}$$
+
+Isso também é solução (é combinação linear das duas soluções, com $k_1=-1/\epsilon$, $k_2=1/\epsilon$). Agora, o que acontece quando $\epsilon \to 0$ (as duas raízes colapsam numa só)? Essa expressão é **exatamente a definição de derivada parcial** de $e^{\alpha t}$ em relação a $\alpha$:
+
+$$\lim_{\epsilon\to0} \frac{e^{(\alpha+\epsilon)t}-e^{\alpha t}}{\epsilon} = \frac{\partial}{\partial\alpha}e^{\alpha t} = t\,e^{\alpha t}$$
+
+
+
+**A primeira solução independente:** $x_1(t) = e^{\alpha t}$
+
+**A segunda solução independente:** $x_2(t) = te^{\alpha t}$, com
 
 $$\frac{dx(t)}{dt} = t\alpha e^{\alpha t} + e^{\alpha t}, \qquad \frac{d^2x(t)}{dt^2} = t\alpha^2 e^{\alpha t} + 2\alpha e^{\alpha t} = \alpha e^{\alpha t}(t\alpha+2)$$
 
@@ -253,17 +279,26 @@ Substituindo em (4):
 
 $$\frac{d^2x(t)}{dt^2} + a\frac{dx(t)}{dt} + bx(t) = te^{\alpha t}\underbrace{(\alpha^2+a\alpha+b)}_{f(\alpha)=0} + e^{\alpha t}\underbrace{(2\alpha+a)}_{f'(\alpha)=0}$$
 
-O primeiro parêntese é nulo porque $\alpha$ é raiz da equação característica $f(\alpha) = \alpha^2+a\alpha+b=0$. O segundo também é nulo porque, quando a raiz é **dupla**, $\alpha$ satisfaz simultaneamente $f(\alpha)=0$ **e** $f'(\alpha) = 2\alpha+a = 0$ (condição matemática de multiplicidade dupla). Logo, $x(t)=te^{\alpha t}$ também é solução.
+O primeiro parêntese é nulo porque $\alpha$ é raiz da equação característica $f(\alpha) = \alpha^2+a\alpha+b=0$. O segundo também é nulo porque, quando a raiz é **dupla**, $\alpha$ satisfaz simultaneamente $f(\alpha)=0$ **e** $f'(\alpha) = 2\alpha+a = 0$ (condição matemática de multiplicidade dupla). 
+
+```math
+\begin{cases} \alpha^2+a\alpha+b=0 \\ 2\alpha+a = 0\end{cases}
+```
+
+
+Logo, $x(t)=te^{\alpha t}$ também é solução.
 
 A solução geral passa a ser:
 
-$$x(t) = k_1 e^{\alpha t} + k_2 t e^{\alpha t}  \qquad (8)$$
+```math
+\boxed{x(t) = k_1 e^{\alpha t} + k_2 t e^{\alpha t}}  \qquad (8)
+```
 
 Aplicando as condições iniciais:
 
-$$x(0) = k_1 = x_0$$
+$$\boxed{x(0) = k_1 = x_0}$$
 
-$$\frac{dx(t)}{dt} = e^{\alpha t}(k_1\alpha + k_2t\alpha + k_2) \Rightarrow \frac{dx(0)}{dt} = k_1\alpha + k_2 = \frac{dx_0}{dt} \Rightarrow k_2 = \frac{dx_0}{dt} - x_0\alpha$$
+$$\frac{dx(t)}{dt} = e^{\alpha t}(k_1\alpha + k_2t\alpha + k_2) \Rightarrow \frac{dx(0)}{dt} = k_1\alpha + k_2 = \frac{dx_0}{dt} \Rightarrow \boxed{k_2 = \frac{dx_0}{dt} - x_0\alpha}$$
 
 **Exemplo numérico:** $a=10$, $b=25$ → $\alpha = -5$ (raiz dupla). Com $x_0=5$, $dx_0/dt=2$:
 
@@ -298,7 +333,9 @@ $$\frac{dx(0)}{dt} = \sigma(k_1+k_2) + j(k_1-k_2)\omega = \frac{dx_0}{dt} \Right
 
 Substituindo em (9):
 
-$$x(t) = e^{\sigma t}\left[x_0\cos\omega t + \frac{dx_0/dt - \sigma x_0}{\omega}\text{sen}\,\omega t\right]$$
+```math
+\boxed{x(t) = e^{\sigma t}\left[x_0\cos\omega t + \frac{dx_0/dt - \sigma x_0}{\omega}\text{sen}\,\omega t\right]}
+```
 
 **Exemplo numérico:** $a=4$, $b=53$ → $\alpha_{1,2} = -2 \pm j7$, logo $\sigma=-2$, $\omega=7$. Com $x_0=5$, $dx_0/dt=2$:
 
