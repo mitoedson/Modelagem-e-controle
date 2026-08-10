@@ -127,7 +127,7 @@ e^{\ln(x(t))} = e^{(\ln(x_0)+\alpha t)} = e^{\ln(x_0)}e^{\alpha t}
 
 ### 2.2 Ponto de equilíbrio
 
-O ponto de equilíbrio $x_e$ é alcançado quando $dx(t)/dt = 0$, ou seja:
+O ponto de equilíbrio $x_e$ é alcançado quando $\frac{dx(t)}{dt} = 0$, ou seja:
 
 ```math
 \alpha x_e = 0 \Rightarrow x_e = 0 \quad (\text{para } \alpha \neq 0)
