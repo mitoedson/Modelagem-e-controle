@@ -12,12 +12,12 @@ Material elaborado a partir dos slides de aula, da disciplina **ESTA020-17: Mode
 A disciplina se desenvolve em seis grandes blocos, que se conectam de forma sequencial:
 
 ```
-┌─────────────────┐   ┌──────────────────┐   ┌─────────────────┐   ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐
+┌─────────────────┐   ┌───────────────────┐   ┌──────────────────┐   ┌───────────────────┐   ┌───────────────────┐   ┌───────────────────┐
 │ 1. Estabilidade │   │ 2. Comportamento  │   │ 3. Espaço de     │   │ 4. Projeto de     │   │ 5. Ressonância e  │   │ 6. Modelagem via  │
 │ segundo Lyapunov│──►│ dinâmico (EDOs de │──►│ estados          │──►│ controladores     │──►│ estabilidade não  │──►│ Euler-Lagrange    │
-│ (definições)     │   │ 1ª e 2ª ordem)    │   │ (generalização)  │   │ (PD)              │   │ linear (Lyapunov  │   │ (sistemas         │
-│                  │   │                   │   │                  │   │                   │   │ 1º/2º método)     │   │ mecânicos)        │
-└─────────────────┘   └──────────────────┘   └─────────────────┘   └──────────────────┘   └──────────────────┘   └──────────────────┘
+│ (definições)    │   │ 1ª e 2ª ordem)    │   │ (generalização)  │   │ (PD)              │   │ linear (Lyapunov  │   │ (sistemas         │
+│                 │   │                   │   │                  │   │                   │   │ 1º/2º método)     │   │ mecânicos)        │
+└─────────────────┘   └───────────────────┘   └──────────────────┘   └───────────────────┘   └───────────────────┘   └───────────────────┘
 ```
 
 1. **Define-se** o que significa um sistema ser estável (Aula 1).
